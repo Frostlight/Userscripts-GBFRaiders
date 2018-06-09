@@ -31,6 +31,8 @@
 // @license      MIT; https://spdx.org/licenses/MIT.html
 // @copyright	 2017, Frostlight (https://openuserjs.org/users/Frostlight)
 // @icon		 https://raw.githubusercontent.com/Frostlight/Userscripts-GBFRaiders/master/icon.png
+// @homepageURL  https://github.com/Frostlight
+// @supportURL   frostlight@users.noreply.github.com
 // @domain 		 raw.github.com
 // @domain		 gbfraiders.com
 // @domain		 gbf.tipchatme.me.com
