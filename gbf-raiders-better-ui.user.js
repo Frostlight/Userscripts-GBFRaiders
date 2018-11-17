@@ -29,7 +29,7 @@
 // @author       Frostlight
 // @description  Removes unnecessary things like images, useless top buttons, and makes everything bigger and bolder! Designed for using in a narrow window.
 // @license      MIT; https://spdx.org/licenses/MIT.html
-// @copyright	 2017, Frostlight (https://openuserjs.org/users/Frostlight)
+// @copyright	   2017, Frostlight (https://openuserjs.org/users/Frostlight)
 // @icon         https://raw.githubusercontent.com/Frostlight/Userscripts-GBFRaiders/master/icon.png
 // @homepageURL  https://github.com/Frostlight
 // @supportURL   mailto:frostlight@users.noreply.github.com
@@ -44,7 +44,7 @@
 // ==/UserScript==
 
 GM_addStyle (`
-    /* Tables */
+    /* Main View Tables */
     tr td {
         height: 50px;
         padding: 0 !important;
@@ -64,7 +64,6 @@ GM_addStyle (`
     .rowed .extra.content .button, .stacking .extra.content .button, .smaller, .smaller>td>button {
         font-size: 14px !important;
     }
-
     /* Raid Delete Button */
     .selected-raids-label .delete {
         margin-left: 0 !important;
@@ -80,11 +79,24 @@ GM_addStyle (`
     #patreon-btn {
         display: none;
     }
+    #clear-list {
+        display: none;
+    }
     #enable-sound {
         overflow: hidden;
         height: 36px;
         padding: 0 !important;
         padding-right: 15px !important;
+    }
+
+    /* Connection Status Height */
+    #connection-status td {
+        height: 36px;
+    }
+
+    /* Disable Toasts */
+    #toast-container {
+        display: none;
     }
 `);
 
