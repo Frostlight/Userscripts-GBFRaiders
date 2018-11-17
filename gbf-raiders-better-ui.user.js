@@ -25,7 +25,7 @@
 // @ids          GBFRaidersBetterUI
 // @name         GBF Raiders Better UI
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @author       Frostlight
 // @description  Removes unnecessary things like images, useless top buttons, and makes everything bigger and bolder! Designed for using in a narrow window.
 // @license      MIT; https://spdx.org/licenses/MIT.html
@@ -77,7 +77,7 @@ GM_addStyle (`
     #help-btn {
         display: none;
     }
-    #connection-status {
+    #patreon-btn {
         display: none;
     }
     #enable-sound {
