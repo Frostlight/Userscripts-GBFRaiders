@@ -82,13 +82,18 @@ GM_addStyle (`
     #clear-list {
         display: none;
     }
+    #pause-list {
+        display: none;
+    }
     #enable-sound {
         overflow: hidden;
         height: 36px;
         padding: 0 !important;
         padding-right: 15px !important;
     }
-
+    #sound-choice-dropdown {
+        z-index: 900;
+    }
     /* Connection Status Height */
     #connection-status td {
         height: calc(36px - .2em);
@@ -104,6 +109,9 @@ GM_addStyle (`
 (function() {
     // Insert sound Button to dashboard
     var soundButton = document.querySelector('#enable-sound');
+    var openSettingsButton = document.querySelector('#open-settings');
+    var soundChoiceDropdown = document.querySelector('#sound-choice-dropdown');
     var dashboard = document.querySelector('#dashboard');
+    dashboard.insertBefore(soundChoiceDropdown, openSettingsButton);
     dashboard.insertBefore(soundButton, dashboard.firstChild);
 })();
