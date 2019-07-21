@@ -116,5 +116,4 @@ GM_addStyle (`
     var soundChoiceDropdown = document.querySelector('#sound-choice-dropdown');
     var header = document.querySelector('#header');
     header.insertBefore(soundChoiceDropdown, dashboard.nextSibling);
-    console.log('VINCENT' + header.firstChild);
 })();
