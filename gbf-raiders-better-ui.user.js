@@ -25,7 +25,7 @@
 // @ids          GBFRaidersBetterUI
 // @name         GBF Raiders Better UI
 // @namespace    http://tampermonkey.net/
-// @version      0.7
+// @version      0.8
 // @author       Frostlight
 // @description  Removes unnecessary things like images, useless top buttons, and makes everything bigger and bolder! Designed for using in a narrow window.
 // @license      MIT; https://spdx.org/licenses/MIT.html
@@ -92,7 +92,7 @@ GM_addStyle (`
         padding-right: 15px !important;
     }
     #sound-choice-dropdown {
-        z-index: 900;
+        width: 200px;
     }
     /* Connection Status Height */
     #connection-status td {
@@ -110,8 +110,11 @@ GM_addStyle (`
     // Insert sound Button to dashboard
     var soundButton = document.querySelector('#enable-sound');
     var openSettingsButton = document.querySelector('#open-settings');
-    var soundChoiceDropdown = document.querySelector('#sound-choice-dropdown');
     var dashboard = document.querySelector('#dashboard');
-    dashboard.insertBefore(soundChoiceDropdown, openSettingsButton);
     dashboard.insertBefore(soundButton, dashboard.firstChild);
+
+    var soundChoiceDropdown = document.querySelector('#sound-choice-dropdown');
+    var header = document.querySelector('#header');
+    header.insertBefore(soundChoiceDropdown, dashboard.nextSibling);
+    console.log('VINCENT' + header.firstChild);
 })();
